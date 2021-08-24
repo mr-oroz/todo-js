@@ -19,7 +19,7 @@ const filterTask = () => {
 const createTemplate = (item, index) => {
     return `
         <div class="todos-item ${item.comleted ? 'checked' : ''}">
-            <div class="todo-item">${item.desciption}</div>
+            <div class="todo-item">(${index + 1}) ${item.desciption}</div>
             <div class="buttons-todo">
                 <input onclick="completeTask(${index})" id="checkbox" type="checkbox" ${item.comleted ? 'checked' : ''}>
                 <button onclick="deleteTask(${index})" class="btn-complete">Delete</button>
