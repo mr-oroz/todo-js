@@ -12,8 +12,8 @@ function Task(desciption) {
     this.comleted = false
 }
 const filterTask = () => {
-    const activeTask = tasks.length && tasks.filter(item => item.comleted == false)
-    const completedTask = tasks.length && tasks.filter(item => item.comleted == true)
+    const activeTask = tasks.length && tasks.filter(item => item.comleted === false)
+    const completedTask = tasks.length && tasks.filter(item => item.comleted === true)
     tasks = [...activeTask, ...completedTask]
 }
 const createTemplate = (item, index) => {
